@@ -1,0 +1,53 @@
+body{
+    background-image: url(../img/space.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.img-container{
+    width: 8%;
+    position: absolute;
+    bottom: 0px;
+    height: none;
+    left: 0px;
+    right: none;
+    transition: left 1s , bottom 1s;
+}
+.img-container img{
+    width: 100%;
+    
+}
+.none{
+    transform: translatey(100%);
+    /* position: relative;
+    bottom: 0;
+    left: 0; */
+    /* animation-name: move; */
+    /* animation-duration: .5s; */
+    /* animation-iteration-count: none; */
+    /* transition: bottom .5s ; */
+
+}
+.infinite{
+    transform: translatey(100%);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    animation-name: move;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    transition: bottom .5s ;
+}
+@keyframes move{
+
+    0%{bottom:50}
+    10%{bottom:100}
+    20%{bottom:150}
+    30%{bottom:200}
+    40%{bottom:250}
+    50%{bottom:300}
+    60%{bottom:350}
+    70%{bottom:400}
+    80%{bottom:450}
+    90%{bottom:500}
+    100%{bottom:600}
+}
